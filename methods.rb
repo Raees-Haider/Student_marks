@@ -19,7 +19,7 @@ def add_student(school)
   student_name = gets.chomp
   student = Student.new(student_name)
 
-  puts "\nEnter marks for each subject:"
+  puts "\nEnter marks of each subject:"
   SUBJECTS.each do |sub|
     print "#{sub}: "
     marks = gets.chomp.to_f
