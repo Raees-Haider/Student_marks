@@ -26,6 +26,12 @@ def add_student(school)
 
   print "Enter student name: "
   student_name = gets.chomp
+
+  if student_name.empty?
+    puts "Invalid name!"
+    return
+  end
+
   student = Student.new(student_name)
 
   puts "\nEnter marks of each subject:"
