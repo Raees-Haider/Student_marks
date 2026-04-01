@@ -8,13 +8,13 @@ load_data(school)
 
 loop do
   puts "\n======================================"
-  puts "\t   Marks System"
+  puts "\t     Marks System"
   puts "======================================"
-  puts "1.Display All Sections"
+  puts "1.Display name of All Sections"
   puts "2.Display students in a section"
   puts "3.Add a section"
   puts "4.Add a student in a section"
-  puts "5.Display Position holder in a Section"
+  puts "5.Display Position holders"
   puts "6.Exit"
   print "Choose an option:"
   option = gets.chomp.to_i
