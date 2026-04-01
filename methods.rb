@@ -2,7 +2,7 @@ def add_section(school)
   print "\nEnter name of new section: "
   name = gets.chomp
 
-  if name.empty?
+  if name.nil? || name.empty?
     puts "Invalid name!"
     return
   elsif school.find_section(name)
@@ -27,7 +27,7 @@ def add_student(school)
   print "Enter student name: "
   student_name = gets.chomp
 
-  if student_name.empty?
+  if student_name.nil? || student_name.empty?
     puts "Invalid name!"
     return
   end
