@@ -1,6 +1,15 @@
 def add_section(school)
   print "\nEnter name of new section: "
   name = gets.chomp
+
+  if name.empty?
+    puts "Invalid name!"
+    return
+  elsif school.find_section(name)
+    puts "Section already exists!"
+    return
+  end
+
   school.add_section(Section.new(name))
   puts "Section #{name} added successfully!"
 end
